@@ -21,6 +21,8 @@ Wprowadź numer opcji: ''')
     if(klucz =="1"):
             try:
                 N=int(input("Podaj rozmiar macierzy: "))
+                if N<=0:
+                    raise ValueError
             except ValueError:
                 print("Podałeś złą wartość!")
                 raise  SystemExit
